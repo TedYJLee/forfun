@@ -5,8 +5,8 @@ from collections import OrderedDict
 import os
 import xlsxwriter
 
-allLocksXlsxPath = 'report/reportAllLockCounts.xlsx'
-eachIssueXlsxPath = 'report/reportEachIssue.xlsx'
+allLocksXlsxPath = os.path.join('report', 'reportAllLockCounts.xlsx')
+eachIssueXlsxPath = os.path.join('report', 'reportEachIssue.xlsx')
 
 if __name__ == '__main__':
     informationDay = informationUtil(informationUtil.DayDayHappy, collectYear=2019)

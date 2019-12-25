@@ -1,4 +1,5 @@
 from BeautifulSoup import BeautifulSoup
+import os
 import requests
 import json
 
@@ -149,7 +150,7 @@ class informationUtil(object):
 
                 dictList += tempDictList
 
-            with open('Log/issueInformation', 'w+') as infile:
+            with open(os.path.join('Log', 'issueInformation'), 'w+') as infile:
                 for element in reversed(dictList):
                     infile.write('%s\n' % json.dumps(element, indent=4))
 

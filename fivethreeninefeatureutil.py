@@ -2,7 +2,7 @@ import os
 import json
 
 class fiveThreeNineFeatureUtil(object):
-    logPath = 'Log/addInformation'
+    logPath = os.path.join('Log', 'addInformation')
 
     lockCountsDict = {
         "0": {},
